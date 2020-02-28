@@ -4,6 +4,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		
 		<title>About Me</title>
+		<script src="./mypage.js"></script>
+
 	  </head>
 	  <nav class="navbar navbar-expand-sm bg-light">
 
@@ -22,7 +24,7 @@
 			<a class="nav-link" href="form.html"> add interest form</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href=login.html"> Sign up Page</a>
+			<a class="nav-link" href="login.html"> Sign up Page</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="tic-tac-toe.html"> TicTacToe</a>
@@ -73,28 +75,33 @@
 	<h3>Interests</h3> 
 	<a href="form.html" class="btn btn-info" role="button">Add Interests</a>
 	<ul class="row">
-		<div class="card" style="width: 18rem;">
+		<div class="card" style="width: 18rem;" id="int1">
 			<img class="card-img-top" src="cooking.jpeg" alt="Card image cap">
 			<div class="card-body">
 			  <h5 class="card-title">Cooking</h5>
 			  <p class="card-text">I love watching binging with babish on youtube</p>
 			  <a href="https://www.youtube.com/user/bgfilms" class="btn btn-primary">Binging with babish link</a>
+			  <button class="button button5" onclick="addint(int1)">+</button> 
 			</div>
 		  </div>
-		  <div class="card" style="width: 18rem;">
+		  <div class="card" style="width: 18rem;" id="int2">
 			<img class="card-img-top" src="rs.jpeg" alt="Card image cap">
 			<div class="card-body">
 			  <h5 class="card-title">Video Games</h5>
 			  <p class="card-text">I Play runescape 3 with both a regular account and a Ironman account</p>
 			  <a href="https://www.runescape.com" class="btn btn-primary">Runescape Link</a>
+			  <button class="button button5" onclick="addint(int2)">+</button> 
+
 			</div>
 		  </div>
-		  <div class="card" style="width: 18rem;">
+		  <div class="card" style="width: 18rem;" id="int3">
 			<img class="card-img-top" src="got.jpeg" alt="Card image cap">
 			<div class="card-body">
 			  <h5 class="card-title">Game of Thrones</h5>
 			  <p class="card-text">Ive watched every episode of GoT... I hate the newest season</p>
 			  <a href="https://www.imdb.com/title/tt0944947/" class="btn btn-primary">IMDb Game of Thrones</a>
+			  <button class="button button5" onclick="addint(int3)">+</button> 
+
 			</div>
 		  </div>
 	</ui>
